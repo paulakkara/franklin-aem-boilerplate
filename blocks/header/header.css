@@ -172,6 +172,11 @@ header nav .nav-sections ul  {
   padding-left: 0;
   font-size: var(--body-font-size-s);
   font-weight: 500;
+  justify-content: flex-end;
+}
+
+header nav .nav-sections ul > li:hover {
+  background-color: var(--link-hover-color);
 }
 
 header nav .nav-sections ul > li {
@@ -196,6 +201,20 @@ header nav .nav-sections ul > li > ul > li {
   header nav[aria-expanded="true"] .nav-sections {
     align-self: unset;
   }
+
+  header nav .nav-sections ul {
+    display: flex;
+    gap: 2em;
+    margin: 0;
+    font-size: var(--body-font-size-xs);
+  }
+
+  header nav .nav-sections > ul > li {
+    flex: 0 1 auto;
+    position: relative;
+    font-weight: 500;
+    padding: 0 1rem;
+}
 
   header nav .nav-sections .nav-drop {
     position: relative;
